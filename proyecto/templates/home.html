@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container p-4">
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido </h1>
+        <p class="lead">En esta pagina tomamos los conceptos basicos para las rutas 
+            en python 
+        </p>
+        <hr class="my-4">
+        <p>PRIMERO 
+                --from flask import Flask, render_template <br>
+
+                --app = Flask(__name__) <br>
+                
+               -- @app.route('/') <br>
+                
+                
+               -- def home() : <br>
+                   -- return render_template('home.html') <br>
+                
+               -- @app.route('/about') <br>
+                --def about(): <br>
+                   -- return render_template('about.html') <br>
+                
+               -- if __name__ == '__main__': <br>
+                     --app.run(debug=True)
+        </p>
+        <div class="container">
+            <p>Para el contenido de cada layout(cada linea va  entre llaves {})</p>
+            <code>
+                % extends "layout.html" % <br>
+
+                    % block content % <br>
+                    Acerca  <br>
+                    % endblock %</code>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
